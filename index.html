@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html>
+<title>MHB CV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <script src="jquery.1.9.1.min.js"></script>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="NavCSS.css">
+    <link rel="stylesheet" href="sideNav.css">
+
+    <style>
+        html,
+        body {
+            font-family: "mulish";
+        }
+
+        h1,
+        h4,
+        h5,
+        h6 {
+            font-family: "mulish";
+        }
+
+        h2,
+        h3 {
+            font-family: "poiretOne";
+        }
+
+        mhbNav {
+            font-family: "poiretOne";
+        }
+
+        navLinks {
+            font-family: "mulish";
+        }
+    </style>
+</head>
+
+<body class="w3-text-grey" id="top">
+    <!--
+    <div id="mySidenav" class="sidenav mhb-body-fontColor mhb-footer-color nav_responsive_text">
+        <a href="#aboutMe"><button class="   w3-bar-item w3-button">About me</button></a>
+        <a href="#education"><button class=" w3-bar-item w3-button">Education</button></a>
+        <a href="#volunteer"><button class=" w3-bar-item w3-button">Volunteer Experience</button></a>
+        <a href="#project"><button class="   w3-bar-item w3-button">Project Experience</button></a>
+             <a href="#work"><button class="w3-bar-item w3-button">Work Experience</button></a> 
+            </div>
+        -->
+    <nav id="MHBnavbar" class="navbar">
+        <div class="mhbNav">
+            <h2>
+                TheGreatMHB
+            </h2>
+        </div>
+        <ul class="navLinks">
+            <li>
+                <a href="#aboutMe">About Me</a>
+            </li>
+            <li>
+                <a href="#work">Work Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#volunteer">Volunteer Experience</a>
+            </li>
+            <li>
+                <a href="#project">Project Experience</a>
+            </li>
+        </ul>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#aboutMe" onclick="closeNav()">About Me</a>
+            <a href="#education" onclick="closeNav()">Education</a>
+            <a href="#volunteer" onclick="closeNav()">Volunteer Experience</a>
+            <a href="#project" onclick="closeNav()">Project Experience</a>
+            <a href="#work" onclick="closeNav()">Work Experience</a>
+        </div>
+        
+        <!-- Use any element to open the sidenav -->
+        <span class="burger" onclick="openNav()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </span>
+    </nav>
+
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px; ">
+        <!-- The Grid -->
+        <div class="w3-row-padding" style="position: relative;">
+
+            <!-- Left Column -->
+            <div class="w3-third">
+                <div class="w3-white w3-text-grey w3-card-4">
+                    <div class="w3-display-container">
+                        <img src="" style="width:100%" alt="">
+                        <div class="w3-display-container w3-container mhb-font-2">
+                            <h3>
+                                <img src="Logo/body/black/account_circle_black_24dp.svg" alt=""
+                                    style="height: 35px; width: 35px;">
+                                Pouya Mehrbabak
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="bio w3-container">
+                        <p>
+                            <img src="Logo/body/black/work_outline_black_24dp.svg" height="22px" viewBox="0 0 22 22"
+                                width="22px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle" alt="">
+                            Python Developer | Software Tester
+                        </p>
+                        <p>
+                            <img src="Logo/body/black/place_black_24dp.svg" height="24px" viewBox="0 0 24 24"
+                                width="24px" fill="rgba(53, 46, 46, 0.9)" style="margin-left:px; vertical-align: middle"
+                                alt="">
+                            Tehran, IR
+                        </p>
+                        <p>
+                            <img src="Logo/body/black/cake_black_24dp.svg" height="24px" viewBox="0 0 24 24" width="24px"
+                                fill="rgba(53, 46, 46, 0.9)" style="margin-left:px; vertical-align: middle" alt="">
+                            1997-07-16
+                        </p>
+                        <p>
+                            <img src="Logo/body/black/email_black_24dp.svg" height="24px" viewBox="0 0 24 24"
+                                width="24px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle" alt="">
+                            pouya.mehrbabak@gmail.com
+                        </p>
+
+                        <hr>
+                        <p class="w3-large"><b>
+                            <img src="Logo/body/black/lightbulb_black_24dp.svg" height="24px" viewBox="0 0 24 24"
+                            width="24px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle" alt="">
+                            General Skills</b>
+                        </p>
+                        <p>Git</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:85%">85 % </div>
+                        </div>
+                        <p>R&D</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color" style="width:90%">90 % </div>
+                        </div>
+                        <p>Algorithm Design</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color" style="width:50%"> 50 %</div>
+                        </div>
+                        <p>Data Structure</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color" style="width:50%">50 %</div>
+                        </div>
+                        <p>Object Oriented Programming</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color" style="width:70%">70 %</div>
+                        </div>
+                        <p>RESTful API design</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color" style="width:20%">20 %</div>
+                        </div>
+                        <p>LPIC 1</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color" style="width:50%">50 %</div>
+                        </div>
+                        <!-- <p>Network +</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color" style="width:50%">50 %</div>
+                        </div> -->
+                        <p>Agile-Scrum</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">50 %</div>
+                        </div>
+                       <p>CI/CD</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:40%">40 % </div>
+                            </div>
+                       
+                        <!-- <p>Design Patterns</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:60%">60%</div>
+                        </div> -->
+                        <br>
+                        <hr>
+                        <p class="w3-large"><b>
+                                <img src="Logo/body/black/code_black_24dp.svg" height="24px" viewBox="0 0 24 24"
+                                    width="24px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle" alt="">
+                                Programming Skills</b></p>
+                        <p>Python</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:90%">90%</div>
+                        </div>
+                        <p>C++</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:30%">30%</div>
+                        </div>
+                        <p>C#</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:30%">30%</div>
+                        </div>
+                        <p>HTML + CSS</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:70%">70%</div>
+                        </div>
+                        <p>JavaScript</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:20%">20%</div>
+                        </div>
+                        <br>
+                        <hr>
+                        <p class="w3-large"><b>
+                                <img src="Logo/body/black/storage_black_24dp.svg" alt="" height="24px"
+                                    viewBox="0 0 24 24" width="24px" fill="rgba(53, 46, 46, 0.9)"
+                                    style="vertical-align: middle;">
+                                DataBase Skills
+                            </b>
+                        </p>
+                        <p>SQL Server</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:60%">60%</div>
+                        </div>
+                        <!--
+                            <p>MySQL</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                            </div>
+                            <p>MongoDB</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                            </div>
+                            <p>PostgreSQL</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                            </div>
+                        -->
+                        <br>
+                        <hr>
+                        <p class="w3-large"><b>
+                                <img src="Logo/body/black/construction_black_24dp.svg" alt="" height="24px"
+                                    viewBox="0 0 24 24" width="24px" fill="rgba(53, 46, 46, 0.9)"
+                                    style="vertical-align: middle;">
+                                Framework Skills
+                                <br>
+                                <br>
+                                <img src="Logo/body/black/icons8-python-64.png" height="24px" viewBox="0 0 24 24"
+                                    width="24px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;" alt="">
+                                <b>
+                                    Python
+                                </b>
+                                <br>
+                                <b>
+                                    <p class="w3-large">
+                                        Back-End
+                                    </p>
+                                </b>
+                            </b>
+                        </p>
+                        <p>Django</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">50%</div>
+                        </div>
+                        <!--
+                            <p>Flask</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                            </div> 
+                        -->
+                        <p class="w3-large">UI</p>
+                        <p>Tkinter</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:30%">30%</div>
+                        </div>
+                        <!--
+                            <p>PyQT</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                            </div>
+                        -->
+                        <!--
+                            <p>PyGame</p>
+                            <div class="w3-light-grey w3-round-xlarge w3-small">
+                                <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                            </div>
+                        -->
+                        <p class="w3-large"><b>
+                                Web Scraping
+                            </b>
+                        </p>
+                        <p>Beautiful Soup</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <p class="w3-large"><b>
+                                Automation
+                            </b>
+                        </p>
+                        <p>Selenium</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <p class="w3-large"><b>
+                                Data Science
+                            </b>
+                        </p>
+                        <p>Numpy</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <p>Pandas</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <p>Matplotlib</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <p>Seaborn</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <!--
+                            <p class="w3-large"><b>
+                                <img src="Logo/body/black/icons8-js-50.png" height="24px" viewBox="0 0 24 24"
+                                width="24px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;" alt="">
+                                JavaScript
+                                <b>
+                                    <p>
+                                        Back-End
+                                    </p>
+                                </b>
+                                <p>
+                                    NodeJs</p>
+                                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                                        <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                        style="width:50%">Loading .. %</div>
+                                    </div>
+                                    <b>
+                                        <p>
+                                            Front-End
+                                        </p>
+                                    </b>
+                                    <p>
+                                        VueJs</p>
+                                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                            style="width:50%">Loading .. %</div>
+                                        </div>
+                                        <br>
+                                        <hr>
+                                    -->
+                        <!--
+                                            <p class="w3-large"><b>
+                                                <img src="Logo/body/black/icons8-server-50.png" height="24px" viewBox="0 0 24 24" width="24px"
+                                    fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;" alt="">
+                                Network Skills</b>
+                        </p>
+                        <p>TCP/IP</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <p>CCNA</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <p>CCNP</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <p>IoT</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width:50%">Loading .. %</div>
+                        </div>
+                        <br>
+                        <hr>
+                    -->
+                        <p class="w3-large w3-text-theme"><b>
+                                <img src="Logo/body/black/language_black_24dp.svg" alt="" height="24px"
+                                    viewBox="0 0 24 24" width="24px" fill="rgba(53, 46, 46, 0.9)"
+                                    style="vertical-align: middle;">
+                                Languages</b></p>
+                        <p>English</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge mhb-color mhb-font-color"
+                                style="width: 100%">100%</div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <!-- End Left Column -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="w3-twothird">
+                <div id="aboutMe"
+                    class="w3-container w3-card-4 w3-content w3-margin-bottom w3-padding-16 mhb-bg-color mhb-font-2">
+                    <h2>
+                        <img src="Logo/body/black/info_black_24dp.svg" alt="" height="28px" viewBox="0 0 24 24"
+                            width="28px" fill="rgba(53, 46, 46, 0.9)"
+                            style="vertical-align: middle;  margin-bottom: 4px;">
+                        About Me
+                    </h2>
+                    <div>
+                        <p class="about-me">
+                            <span>
+                                I'm a graduate student of computer software engineering who Prefers Python for developing and a data science and machine
+                                learning enthusiast ,Also Interested in testing and debugging programs and has middle knowledge about Agile methodology
+                                and scrum.
+                            </span>
+                            <!-- <span>
+                                A graduate student of computer software engineering with a creative
+                                mind, dedicated to project, and a teamwork follower who tries to be supportive for team
+                                who loves to expand his knowledges.
+                            </span>
+                            <span><br>
+                                A developer who Prefers Python for developing codes and programs and a data science and
+                                machine learning enthusiast
+                                ,Also Interested in testing and debugging programs and has middle knowledge about Agile
+                                methodology and scrum.
+                            </span>
+                            <br> -->
+                        </p>
+                        <!-- <p style="text-align: right;" class="about-me">
+                            <span>
+                                فارغ التحصیل رشته مهندسی کامپیوتر گرایش نرم افزار هستم
+                                و برای توسعه محصول پایتون رو بیشتر دوست دارم
+                                و در حال حاضر دارم جنگو یاد میگیرم ،
+                                با لینوکس دوست هستم و میتوانم با گیت کار کنم . همچنین
+                                در آینده علاقمندم که در دیتا ساینس بیشتر فعال باشم
+                                و در ادامه به سمت ماشین لرنینگ حرکت کنم
+                                . با فریمورک اسکرام و متد اجایل آشنایی دارم
+                                و همیشه سعی میکنم در تیم 
+                                با گروه هماهنگ شوم و موضوعات را سریع یاد بگیرم
+                            </span>
+                        </p> -->
+                    </div>
+                </div>
+                <!-- WORK EXP    -->
+                    <div class="w3-container w3-card-4 w3-white w3-padding-16" id="work">
+                        <h2 class="w3-text-grey"><i
+                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge mhb-body-fontColor"></i>
+                            <img src="Logo/body/black/laptop_black_24dp.svg" alt="" height="28px" viewBox="0 0 24 24"
+                            width="28px" fill="rgba(53, 46, 46, 0.9)"
+                            style="vertical-align: middle;  margin-bottom: 4px;">
+                            Work Experience
+                        </h2>
+                        <div class="w3-container">
+                            <!-- <h5 class="w3-opacity mb-0"><b>Android Developer Internship</b></h5>
+                            <h6 class="mhb-font-color2 mt-0">
+                                Kavoshgaran Ertebatat Shayegan, Tehran</h6>
+                                <span class="mhb-body-fontColor badge">Oct 2016 - Mar 2017</span>
+                                <hr> -->
+                                <h5 class="w3-opacity mb-0"><b>Junior Software QA Engineer</b></h5>
+                                <h6 class="mhb-font-color2 mt-0">
+                                    PAP Group Ltd. , Tehran</h6>
+                                <span class="mhb-body-fontColor badge">September 2021 - Now</span>
+                                <hr>
+                            </div>
+                        </div>
+
+                <div class="w3-container w3-card-4 w3-white w3-padding-16 w3-margin-top" id="education">
+                    <h2 class="w3-text-grey"><i class="w3-margin-right w3-xxlarge mhb-body-fontColor"></i>
+                        <img src="Logo/body/black/school_black_24dp.svg" alt="" height="28px" viewBox="0 0 24 24"
+                            width="28px" fill="rgba(53, 46, 46, 0.9)"
+                            style="vertical-align: middle;  margin-bottom: 4px;">
+                        Education
+                    </h2>
+                    <div class="w3-container">
+                        <h4 class="w3-opacity mb-0"><b>Islamic Azad University</b></h4>
+                        <h5 class="w3-opacity mb-0">Science And Research Branch</h5>
+                        <h6 class="mhb-font-color2 mt-0">
+                            Master's degree of Computer science 
+                            Soft computing and artificial intelligence</h6>
+                        <span class="mhb-body-fontColor badge">2021 - Now</span>
+                        <br>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h4 class="w3-opacity mb-0"><b>Islamic Azad University</b></h4>
+                        <h5 class="w3-opacity mb-0">Central Tehran Branch</h5>
+                        <h6 class="mhb-font-color2 mt-0">
+                            Bachelor Degree of Computer Software Engineering</h6>
+                        <span class="mhb-body-fontColor badge">2015 - 2021</span>
+                        <br>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity mb-0"><b>Allameh Tabataba'i High School</b></h5>
+                        <h6 class="mhb-font-color2 mt-0">HighSchool Diploma Degree</h6>
+                        <span class="badge mhb-body-fontColor">2011 - 2015</span>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="w3-container w3-card-4 w3-white w3-padding-16 w3-margin-top" id="volunteer">
+                    <h2 class="w3-display-container w3-container mhb-font-2 w3-text-grey">
+                        <img src="Logo/body/black/volunteer_activism_black_24dp.svg" alt="" height="28px"
+                            viewBox="0 0 24 24" width="28px" fill="rgba(53, 46, 46, 0.9)"
+                            style="vertical-align: middle;  margin-bottom: 4px;">
+                        Volunteer Experience
+                    </h2>
+                    <div class="w3-container" style="padding-bottom: 16px;">
+                        <h5 class="w3-opacity mb-0"><b> Public Relations Director</b></h5>
+                        <h6 class="mhb-font-2 w3-text-grey">IAUCTB's Association of Computer Engineering</h6>
+                        <span class="badge mhb-body-fontColor">Dec 2016 – Oct 2018</span>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+                <div class="w3-container w3-card-4 w3-white w3-margin-top w3-padding-16" id="project">
+                    <h2 class="mhb-font-2 w3-text-grey"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge mhb-body-fontColor mhbResponsive"></i>
+                        <img src="Logo/body/black/precision_manufacturing_black_24dp.svg" alt="">
+                        Project Experience
+                    </h2>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity mb-0">
+                            <img src="Logo/body/black/icons8-python-48.png" height="24px" viewBox="0 0 24 24"
+                                width="24px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;" alt="">
+                            <b>Python Projects</b>
+                        </h5>
+                        <ul class="mhb-font-color2 mt-0">
+                            <li>
+                                <a href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Compiler%20Class/prefix%20suffix%20substring%20proper%20prefix%20subsequence"
+                                    class="mhb-font-2 w3-text-grey">
+                                    Compiler Class Projects</a>
+                                <span class="badge mhb-body-fontColor">2020</span>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity mb-0">
+                            <img src="Logo/body/black/icons8-c-programming-48.png" height="24px" viewBox="0 0 24 24"
+                                width="24px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;" alt="">
+                            <b>C Projects</b>
+                        </h5>
+                        <ul class="mhb-font-color2 mt-0">
+                            <li>
+                                <a class="mhb-font-2 w3-text-grey"
+                                    href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Matlab%20Course%20Excercises">
+                                    Micro Processor Lab Projects</a>
+                                <span class="badge mhb-body-fontColor">2020</span>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity mb-0">
+                            <img src="Logo/body/black/icons8-c-sharp-logo-2-48.png" height="24px" viewBox="0 0 24 24"
+                                width="24px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;" alt="">
+                            <b>C# Projects</b>
+                        </h5>
+                        <ul class="mhb-font-color2 mt-0">
+                            <li>
+                                <a class="mhb-font-2 w3-text-grey"
+                                    href=">https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Triangle%20Project">
+                                    Login Form Project</a>
+                                <span class="badge mhb-body-fontColor">2019</span>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity mb-0">
+                            <img src="Logo/body/black/icons8-c++-48.png" height="24px" viewBox="0 0 24 24" width="24px"
+                                fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;" alt="">
+                            <b>C++ Projects</b>
+                        </h5>
+                        <ul class="mhb-font-color2 mt-0">
+                            <li>
+                                <a class="mhb-font-2 w3-text-grey" href="https://github.com/pouya-mhb/My-Ping-app">
+                                    Ping Project</a>
+                                <span class="badge mhb-body-fontColor">2017</span>
+                            </li>
+                            <br>
+                            <li>
+                                <a class="mhb-font-2 w3-text-grey"
+                                    href="https://github.com/pouya-mhb/My-Data-Structure-Project">
+                                    Data Structure Project</a>
+                                <span class="badge mhb-body-fontColor">2017</span>
+                            </li>
+                            <br>
+                            <li>
+                                <a class="mhb-font-2 w3-text-grey"
+                                    href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Phone%20book">
+                                    Phone Book Project</a>
+                                <span class="badge mhb-body-fontColor">2016</span>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity mb-0">
+                            <img src="Logo/body/black/icons8-matlab-48.png" height="24px" viewBox="0 0 24 24"
+                                width="24px" fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;" alt="">
+                            <b>Matlab Projects</b>
+                        </h5>
+                        <ul class="mhb-font-color2 mt-0">
+                            <li>
+                                <a class="mhb-font-2 w3-text-grey"
+                                    href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Matlab%20Course%20Excercises">
+                                    Matlab Course Excercises</a>
+                                <span class="badge mhb-body-fontColor">2020</span>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity mb-0">
+                            <img src="Logo/body/black/icons8-microsoft-sql-server-48.png" ewBox="0 0 24 24" width="24px"
+                                fill="rgba(53, 46, 46, 0.9)" style="vertical-align: middle;" alt="">
+                            <b>SQL Server Projects</b>
+                        </h5>
+                        <ul class="mhb-font-color2 mt-0">
+                            <li>
+                                <a class="mhb-font-2 w3-text-grey"
+                                    href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/SQL%20Server%20Course%20Excercises">
+                                    SQL Server Excercises</a>
+                                <span class="badge mhb-body-fontColor">2019</span>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity mb-0"><b>Assembly Projects</b></h5>
+                        <ul class="mhb-font-color2 mt-0">
+                            <li>
+                                <a class="mhb-font-2 w3-text-grey"
+                                    href="https://github.com/pouya-mhb/University-Excersises-and-Projects/tree/main/Computer%20Arcitecture%20Project">
+                                    Computer Arcitecture Project</a>
+                                <span class="badge mhb-body-fontColor">2018</span>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="w3-container">
+                        <h5 class="w3-opacity mb-0"><b>Simulation Projects</b></h5>
+                        <ul class="mhb-font-color2 mt-0">
+                            <li>
+                                <a class="mhb-font-2 w3-text-grey" href="https://github.com/pouya-mhb/ProteusProjects">
+                                    Proteus Projects</a>
+                                <span class="badge mhb-body-fontColor">2020</span>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+
+                <!-- End Right Column -->
+            </div>
+
+            <!-- End Grid -->
+        </div>
+
+        <!-- End Page Container -->
+    </div>
+<div>
+    <a href="#top" class="top-link w3-button w3-center w3-margin-top badge go-top" style="margin-right: 2%;" id="go-top">
+        <span class="screen-reader-text">
+            <img src="Logo/body/black/keyboard_arrow_up_white_24dp.svg" alt="" height="28px" viewBox="0 0 24 24"
+                width="28px" fill="rgba(53, 46, 46, 0.9)" style= "float: left; vertical-align: middle;  margin-bottom: 4px;">
+        </span>
+    </a>
+</div>
+    <!-- footer -->
+    <footer class="w3-container w3-center w3-margin-top mhb-footer-color mhb-font-color">
+        <p>Contact Me</p>
+        <a href="https://github.com/pouya-mhb" title="GitHub">
+            <img class="mhb-footer-icon" src="Logo\gh.png"></a>
+        <a href="https://www.linkedin.com/in/thegreatmb/" title="Linkedin">
+            <img class="mhb-footer-icon" src="Logo\ld.png"></a>
+    </footer>
+    
+    <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+
+</html>
