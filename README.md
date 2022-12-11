@@ -1,2 +1,2 @@
 # pouya-mhb.github.io
-My personal web page and resume 
+My CV and portfolio 
